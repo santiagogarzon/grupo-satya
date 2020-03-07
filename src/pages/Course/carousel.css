@@ -1,0 +1,21 @@
+.carousel-indicators
+{
+   display: none;
+}
+
+.leftControl
+{
+    display :none;
+}
+.rightControl
+{
+    display :none;
+}
+.right 
+{
+    display :none;
+}
+.left 
+{
+    display :none;
+}
