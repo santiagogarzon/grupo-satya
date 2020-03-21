@@ -11,6 +11,7 @@ import Feature from "./Feature";
 import Counter from "./Counter";
 import Testimonial from "./Testimonial";
 import Partner from "../../components/Shared/Partner";
+import Steps from "./Steps";
 
 // Modal Video
 import ModalVideo from "react-modal-video";
@@ -111,6 +112,8 @@ class Index extends Component {
 
         {/* Feature */}
         <Feature />
+
+        <Steps />
 
         {/* Partner */}
         <section className="pt-5 pb-5 border-bottom">

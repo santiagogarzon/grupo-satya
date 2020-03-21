@@ -55,15 +55,15 @@ class PageTerms extends Component {
                     </div>
                 </section>
 
-                <section className="section">
+                <section className="section pt-60">
                     <div className="container">
                         <Row className="justify-content-center">
                             <Col lg={9}>
-                                <div className="p-4 shadow border rounded">
-                                    <h5>Introduction :</h5>
+                                <div className="p-3 shadow border rounded">
+                                    <h5>Introducción :</h5>
                                     <p className="text-muted">It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. One may speculate that over the course of time certain letters were added or deleted at various positions within the text.</p>
 
-                                    <h5>User Agreements :</h5>
+                                    <h5>Acuerdos de Usuario :</h5>
                                     <p className="text-muted">The most well-known dummy text is the 'Lorem Ipsum', which is said to have <b className="text-danger">originated</b> in the 16th century. Lorem Ipsum is <b className="text-danger">composed</b> in a pseudo-Latin language which more or less <b className="text-danger">corresponds</b> to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also <b className="text-danger">incomprehensible</b>, but it imitates the rhythm of most European languages in Latin script. The <b className="text-danger">advantage</b> of its Latin origin and the relative <b className="text-danger">meaninglessness</b> of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's <b className="text-danger">attention</b> from the layout.</p>
                                     <p className="text-muted">There is now an <b className="text-danger">abundance</b> of readable dummy texts. These are usually used when a text is <b className="text-danger">required purely</b> to fill a space. These alternatives to the classic Lorem Ipsum texts are often amusing and tell short, funny or <b className="text-danger">nonsensical</b> stories.</p>
                                     <p className="text-muted">It seems that only <b className="text-danger">fragments</b> of the original text remain in the Lorem Ipsum texts used today. One may speculate that over the course of time certain letters were added or deleted at various positions within the text.</p>
