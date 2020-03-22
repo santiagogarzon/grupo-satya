@@ -1,6 +1,14 @@
 import React from "react";
 
 // Import all components
+
+const Landing = React.lazy(() => import("./pages/Landing/index"));
+const IniciarReclamo = React.lazy(() => import("./pages/IniciarReclamo"));
+const FAQs = React.lazy(() => import("./pages/FAQs"));
+const PageContact = React.lazy(() => import("./pages/Contacto"));
+const PageTerms = React.lazy(() => import("./pages/TerminosYCondiciones"));
+const Nosotros = React.lazy(() => import("./pages/SobreNosotros"));
+
 const Main = React.lazy(() => import("./pages/Home/indexMain"));
 const Agency = React.lazy(() => import("./pages/Agency/index"));
 const Saas = React.lazy(() => import("./pages/Saas/index"));
@@ -18,31 +26,32 @@ const Personal = React.lazy(() => import("./pages/Personal/index"));
 const SingleProduct = React.lazy(() => import("./pages/SingleProduct/index"));
 const Enterprise = React.lazy(() => import("./pages/Enterprise/index"));
 const Portfolio = React.lazy(() => import("./pages/Portfolio/index"));
-const Services = React.lazy(() => import("./pages/Services/index"));
 const ChangeLog = React.lazy(() => import("./pages/ChangeLog"));
 const Components = React.lazy(() => import("./pages/Components"));
 const Documentation = React.lazy(() => import("./pages/Documentation"));
-const PageAboutUs = React.lazy(() => import("./pages/PageAboutUs"));
 const PageBlog = React.lazy(() => import("./pages/PageBlog"));
 const PageBlogDetail = React.lazy(() => import("./pages/PageBlogDetail"));
 const PageBlogSidebar = React.lazy(() => import("./pages/PageBlogSidebar"));
 const PageContactOne = React.lazy(() => import("./pages/PageContactOne"));
 const PageContactThree = React.lazy(() => import("./pages/PageContactThree"));
-const PageContactTwo = React.lazy(() => import("./pages/PageContactTwo"));
-const PageJobApply = React.lazy(() => import("./pages/PageJobApply"));
 const PageJobDetail = React.lazy(() => import("./pages/PageJobDetail"));
 const PageJob = React.lazy(() => import("./pages/PageJob"));
 const PagePricing = React.lazy(() => import("./pages/PagePricing"));
 const PagePrivacy = React.lazy(() => import("./pages/PagePrivacy"));
 const PageServices = React.lazy(() => import("./pages/PageServices"));
 const PageTeam = React.lazy(() => import("./pages/PageTeam"));
-const PageTerms = React.lazy(() => import("./pages/PageTerms"));
 const PageWork = React.lazy(() => import("./pages/PageWork"));
 const PageWorkDetail = React.lazy(() => import("./pages/PageWorkDetail"));
-const FAQs = React.lazy(() => import("./pages/FAQs"));
 
 const routes = [
   // public Routes
+  { path: "/index", component: Landing },
+  { path: "/iniciar-reclamo", component: IniciarReclamo },
+  { path: "/preguntas-frecuentes", component: FAQs },
+  { path: "/contacto", component: PageContact },
+  { path: "/terminos-y-condiciones", component: PageTerms },
+  { path: "/sobre-nosotros", component: Nosotros },
+
   { path: "/index-saas", component: Saas },
   { path: "/index-apps", component: Apps },
   { path: "/index-agency", component: Agency },
@@ -59,29 +68,23 @@ const routes = [
   { path: "/index-single", component: SingleProduct },
   { path: "/index-enterprise", component: Enterprise },
   { path: "/index-portfolio", component: Portfolio },
-  { path: "/index-services", component: Services },
   { path: "/changelog", component: ChangeLog },
   { path: "/components", component: Components },
   { path: "/documentation", component: Documentation },
-  { path: "/page-aboutus", component: PageAboutUs },
   { path: "/page-blog", component: PageBlog },
   { path: "/page-blog-detail", component: PageBlogDetail },
   { path: "/page-blog-sidebar", component: PageBlogSidebar },
   { path: "/page-contact-one", component: PageContactOne },
   { path: "/page-contact-three", component: PageContactThree },
-  { path: "/page-contact-two", component: PageContactTwo },
-  { path: "/page-job-apply", component: PageJobApply },
   { path: "/page-job-detail", component: PageJobDetail },
   { path: "/page-job", component: PageJob },
   { path: "/page-pricing", component: PagePricing },
   { path: "/page-privacy", component: PagePrivacy },
   { path: "/page-services", component: PageServices },
-  { path: "/page-team", component: PageTeam },
-  { path: "/page-terms", component: PageTerms },
   { path: "/page-work", component: PageWork },
+  { path: "/page-team", component: PageTeam },
   { path: "/page-work-detail", component: PageWorkDetail },
-  { path: "/index", component: Main },
-  { path: "/faqs", component: FAQs }
+  { path: "/index-old", component: Main }
 ];
 
 export default routes;

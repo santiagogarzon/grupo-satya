@@ -124,11 +124,10 @@ class Index extends Component {
           </div>
         </section>
 
-        {/* Counter */}
-        <Counter />
+        {/* <Counter /> */}
 
         {/* Testimonial */}
-        <Testimonial />
+        {/* <Testimonial /> */}
       </React.Fragment>
     );
   }

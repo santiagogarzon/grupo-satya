@@ -21,7 +21,7 @@ class Steps extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section bg-light">
+        <section className="section bg-light" id="proceso">
           <div className="container">
             <Row className="justify-content-center">
               <Col className="text-center">
@@ -166,9 +166,8 @@ class Steps extends Component {
                   <h2 className="mb-0 mt-3">
                     <span className="counter-value" data-count="45000">
                       {" "}
-                      <CountUp start={0} end={628} duration={8} />
+                      <CountUp start={200} end={628} duration={50} />
                     </span>
-                    $
                   </h2>
                   <h5 className="counter-head text-muted">Siniestros</h5>
                 </div>
@@ -179,7 +178,7 @@ class Steps extends Component {
                   <h2 className="mb-0 mt-3">
                     <span className="counter-value" data-count="48002">
                       {" "}
-                      <CountUp start={0} end={500655} duration={8} />
+                      <CountUp start={300000} end={500655} duration={50} />
                     </span>
                     $
                   </h2>
@@ -191,7 +190,7 @@ class Steps extends Component {
                   <img src={Asset189} height="70" alt="" />
                   <h2 className="mb-0 mt-3">
                     <span className="counter-value" data-count="11">
-                      <CountUp start={0} end={85} duration={8} />
+                      <CountUp start={50} end={85} duration={50} />
                     </span>
                     %
                   </h2>
@@ -204,7 +203,7 @@ class Steps extends Component {
                   <h2 className="mb-0 mt-3">
                     <span className="counter-value" data-count="9">
                       {" "}
-                      <CountUp start={0} end={90} duration={8} />
+                      <CountUp start={30} end={90} duration={50} />
                     </span>
                     Días
                   </h2>

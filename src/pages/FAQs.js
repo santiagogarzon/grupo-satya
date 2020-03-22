@@ -44,6 +44,21 @@ class FAQs extends Component {
                   <Col lg={12} className="text-center">
                     <div className="page-next-level">
                       <h4 className="title"> Preguntas Frecuentes</h4>
+                      <ul className="page-next d-inline-block bg-white shadow p-2 pl-4 pr-4 rounded mb-0">
+                        <li>
+                          <Link
+                            to="/"
+                            className="text-uppercase font-weight-bold text-dark"
+                          >
+                            Inicio
+                          </Link>
+                        </li>
+                        <li>
+                          <span className="text-uppercase text-primary font-weight-bold">
+                            Preguntas Frecuentes
+                          </span>
+                        </li>
+                      </ul>
                     </div>
                   </Col>
                 </Row>
@@ -57,14 +72,16 @@ class FAQs extends Component {
             <Row className="justify-content-center">
               <Col lg={9}>
                 <div className="p-3 shadow border rounded">
-                  <h5 className="">Preguntas y Respuestas de los usuarios :</h5>
+                  <h5 className="">
+                    Preguntas y Respuestas de nuestros usuarios :
+                  </h5>
                   <div className="faq-content mt-4">
                     <div className="accordion" id="accordionExample">
                       <Card className="border rounded shadow mb-2">
                         <Link
                           className={
                             this.state.t1
-                              ? "faq position-relative text-secondary"
+                              ? "faq position-relative text-primary"
                               : "faq position-relative text-dark"
                           }
                           onClick={() =>
@@ -83,17 +100,17 @@ class FAQs extends Component {
                           >
                             <h4 className="title mb-0 faq-question">
                               {" "}
-                              Dummy text is text that is used in the publishing
-                              industry ?{" "}
+                              ¿Cuánto tiempo tengo para iniciar mi reclamo?{" "}
                             </h4>
                           </div>
                         </Link>
                         <Collapse isOpen={this.state.t1}>
                           <CardBody>
                             <p className="text-muted mb-0 faq-ans">
-                              There are many variations of passages of Lorem
-                              Ipsum available, but the majority have suffered
-                              alteration in some form.
+                              El plazo que otorga la ley a los fines de poder
+                              iniciar un reclamo es de tres (3) años desde el
+                              momento del accidente. En caso que pase más
+                              tiempo, el mismo corre riesgo de prescribir.
                             </p>
                           </CardBody>
                         </Collapse>
@@ -122,17 +139,20 @@ class FAQs extends Component {
                           >
                             <h4 className="title mb-0 faq-question">
                               {" "}
-                              Web designers to occupy the space which will later
-                              be filled ?{" "}
+                              ¿Cuánto tiempo tienen las personas que sufrieron
+                              el accidente para realizar la denuncia en su
+                              respectiva compañía de seguros?{" "}
                             </h4>
                           </div>
                         </Link>
                         <Collapse isOpen={this.state.t2}>
                           <CardBody>
                             <p className="text-muted mb-0 faq-ans">
-                              There are many variations of passages of Lorem
-                              Ipsum available, but the majority have suffered
-                              alteration in some form.
+                              Conforme la ley de seguros (Ley 17.418) establece
+                              que el plazo máximo para informar acerca de un
+                              siniestro sufrido a la propia compañía de seguros
+                              es de tres (3) días. Sin embargo,
+                              jurisprudencialmente el mismo puede ser superior.
                             </p>
                           </CardBody>
                         </Collapse>
@@ -161,17 +181,19 @@ class FAQs extends Component {
                           >
                             <h4 className="title mb-0 faq-question">
                               {" "}
-                              This is required when, for example, the final text
-                              is not yet available ?{" "}
+                              ¿Si no tengo seguro, puedo iniciar mi reclamo?{" "}
                             </h4>
                           </div>
                         </Link>
                         <Collapse isOpen={this.state.t3}>
                           <CardBody>
                             <p className="text-muted mb-0 faq-ans">
-                              There are many variations of passages of Lorem
-                              Ipsum available, but the majority have suffered
-                              alteration in some form.
+                              Si, se puede. En caso que no poseas seguro o no
+                              tengas cobertura al momento del siniestro por
+                              falta de pago, aún así se puede reclamar. Para
+                              ello será necesario que presentes una “constancia
+                              de NO seguro” la cual debe ser requerida a una
+                              repartición policial.
                             </p>
                           </CardBody>
                         </Collapse>
@@ -200,17 +222,24 @@ class FAQs extends Component {
                           >
                             <h4 className="title mb-0 faq-question">
                               {" "}
-                              The most well-known dummy text is the 'Lorem
-                              Ipsum', which is said ?{" "}
+                              ¿En caso de que haya sufrido alguna lesión, la
+                              compañía del tercero debe indemnizarme?{" "}
                             </h4>
                           </div>
                         </Link>
                         <Collapse isOpen={this.state.t4}>
                           <CardBody>
                             <p className="text-muted mb-0 faq-ans">
-                              There are many variations of passages of Lorem
-                              Ipsum available, but the majority have suffered
-                              alteration in some form.
+                              Si, puede reclamar en el caso de que haya sufrido
+                              una lesión. Para ello, luego de que se haya
+                              reunido con nuestros médicos especialistas, los
+                              mismos elaborarán un informe donde conste el grado
+                              de incapacidad que devino del siniestro. Por ese
+                              porcentaje, a través de una fórmula especial, se
+                              calcula el monto dinerario potencial a cobrar.
+                              Asimismo, también se puede reclamar daño moral,
+                              lucro cesante, daño emergente, desvalorización
+                              venal, entre otros.
                             </p>
                           </CardBody>
                         </Collapse>
@@ -239,17 +268,20 @@ class FAQs extends Component {
                           >
                             <h4 className="title mb-0 faq-question">
                               {" "}
-                              Lorem Ipsum is composed in a pseudo-Latin language
-                              ?{" "}
+                              ¿La gestión que realiza GRUPO SATYA tiene costo
+                              alguno para el asegurado?{" "}
                             </h4>
                           </div>
                         </Link>
                         <Collapse isOpen={this.state.t5}>
                           <CardBody>
                             <p className="text-muted mb-0 faq-ans">
-                              There are many variations of passages of Lorem
-                              Ipsum available, but the majority have suffered
-                              alteration in some form.
+                              No, es totalmente gratuito en el caso de reclamar
+                              solamente daños materiales, es decir, el arreglo
+                              del vehículo. Solo en los casos de reclamar
+                              lesiones, se pacta un porcentaje del cinco por
+                              ciento (5%) en concepto de honorarios del total de
+                              capital que eventualmente cobrase el asegurado.
                             </p>
                           </CardBody>
                         </Collapse>

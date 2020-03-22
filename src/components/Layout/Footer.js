@@ -25,8 +25,8 @@ class Footer extends Component {
                   Grupo Satya<span className="text-primary">.</span>
                 </Link>
                 <p className="mt-4">
-                  Start working with Landrick that can provide everything you
-                  need to generate awareness, drive traffic, connect.
+                  Empeza a trabajar con nosotros para que te proveamos de la
+                  seguridad y eficiencia que estas buscando.
                 </p>
                 <ul className="list-unstyled social-icon social mb-0 mt-4">
                   <li className="list-inline-item">
@@ -47,98 +47,52 @@ class Footer extends Component {
                 </ul>
               </div>
 
-              <div className="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                <h4 className="text-light footer-head">Company</h4>
+              <div className="col-lg-4 col-md-8 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <h4 className="text-light footer-head">Empresa</h4>
                 <ul className="list-unstyled footer-list mt-4">
                   <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> About us
+                    <Link to="/index" className="text-foot">
+                      <i className="mdi mdi-chevron-right mr-1"></i> Home
                     </Link>
                   </li>
                   <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Services
+                    <Link to="/sobre-nosotros" className="text-foot">
+                      <i className="mdi mdi-chevron-right mr-1"></i> Sobre
+                      Nosotros
                     </Link>
                   </li>
                   <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Team
+                    <Link to="/preguntas-frecuentes" className="text-foot">
+                      <i className="mdi mdi-chevron-right mr-1"></i> Preguntas
+                      Frecuentes
                     </Link>
                   </li>
                   <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Pricing
+                    <Link to="/terminos-y-condiciones" className="text-foot">
+                      <i className="mdi mdi-chevron-right mr-1"></i> Terminos y
+                      Condiciones
                     </Link>
                   </li>
                   <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Features
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> FAQ
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Login
+                    <Link to="/iniciar-reclamo" className="text-foot">
+                      <i className="mdi mdi-chevron-right mr-1"></i> Iniciar
+                      Reclamos
                     </Link>
                   </li>
                 </ul>
               </div>
 
-              <div className="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                <h4 className="text-light footer-head">Usefull Links</h4>
-                <ul className="list-unstyled footer-list mt-4">
-                  <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Privacy
-                      Protection
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Safe
-                      Payments
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Terms of
-                      Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i>{" "}
-                      Documentation
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Privacy
-                      Policy
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <div className="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                 <h4 className="text-light footer-head">Newsletter</h4>
                 <p className="mt-4">
-                  Sign up and receive the latest tips via email.
+                  Inscribite y recibi nuestras novedades via email.
                 </p>
                 <form>
                   <div className="row">
                     <div className="col-lg-12">
                       <div className="foot-subscribe form-group position-relative">
                         <label>
-                          Write your email{" "}
+                          Escribi tu Email{" "}
                           <span className="text-danger">*</span>
                         </label>
                         <i className="mdi mdi-email ml-3 icons"></i>
@@ -147,7 +101,7 @@ class Footer extends Component {
                           name="email"
                           id="emailsubscribe"
                           className="form-control pl-5 rounded"
-                          placeholder="Your email : "
+                          placeholder="Tu email : "
                           required
                         />
                       </div>
@@ -158,7 +112,7 @@ class Footer extends Component {
                         id="submitsubscribe"
                         name="send"
                         className="btn btn-primary w-100"
-                        value="Subscribe"
+                        value="Suscribite"
                       />
                     </div>
                   </div>
@@ -174,40 +128,11 @@ class Footer extends Component {
               <div className="col-sm-6">
                 <div className="text-sm-left">
                   <p className="mb-0">
-                    © {new Date().getFullYear()} Landrick. Develop by
-                    Themesbrand.
+                    © {new Date().getFullYear()} Grupo Satya.
                   </p>
                 </div>
               </div>
-              <div className="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                <ul className="list-unstyled payment-cards text-sm-right mb-0">
-                  <li className="list-inline-item mr-1">
-                    <Link to="#">
-                      <img src={americanEx} title="American Express" alt="" />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item mr-1">
-                    <Link to="#">
-                      <img src={discover} title="Discover" alt="" />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item mr-1">
-                    <Link to="#">
-                      <img src={masterCard} title="Master Card" alt="" />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item mr-1">
-                    <Link to="#">
-                      <img src={paypal} title="Paypal" alt="" />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item">
-                    <Link to="#">
-                      <img src={visa} title="Visa" alt="" />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+              <div className="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0"></div>
             </div>
           </div>
         </footer>

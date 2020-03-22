@@ -175,7 +175,7 @@ class PageContactTwo extends Component {
                     <div className="content mt-3 overflow-hidden d-block">
                       <h4 className="title font-weight-bold mb-0">Telefono</h4>
                       <a href="tel:+152534-468-854" className="text-primary h6">
-                        +54 3513981656
+                        +54 3518130271
                       </a>
                     </div>
                   </div>

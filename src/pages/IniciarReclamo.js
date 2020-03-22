@@ -53,7 +53,7 @@ class PageJobApply extends Component {
                             to="index"
                             className="text-uppercase font-weight-bold text-dark"
                           >
-                            Home
+                            Inicio
                           </Link>
                         </li>
                         <li>
@@ -166,6 +166,7 @@ class PageJobApply extends Component {
                       <Col md={6}>
                         <div className="form-group">
                           <label>Aseguradora del tercero:</label>
+                          <span className="text-danger">*</span>
                           <select className="form-control" id="Sortbylist-Shop">
                             <option>Aseguradora</option>
                             <option>Aseguradora</option>
@@ -178,6 +179,7 @@ class PageJobApply extends Component {
                       <Col md={12}>
                         <div className="form-group position-relative">
                           <label>Descripción del Accidente:</label>
+                          <span className="text-danger">*</span>
                           <i className="mdi mdi-comment-text-outline ml-3 icons"></i>
                           <textarea
                             name="comments"
@@ -186,38 +188,6 @@ class PageJobApply extends Component {
                             className="form-control pl-5"
                             placeholder="Describe el accidente :"
                           ></textarea>
-                        </div>
-                      </Col>
-                      <Col md={6}>
-                        <div className="form-group position-relative">
-                          <label>Subir imagen Dni:</label>
-                          <input
-                            type="file"
-                            className="form-control-file"
-                            id="fileupload"
-                          />
-                        </div>
-                      </Col>
-                      <Col md={6}>
-                        <div className="form-group position-relative">
-                          <label>Subir Reclamo :</label>
-                          <input
-                            type="file"
-                            className="form-control-file"
-                            id="fileupload"
-                            data-multiple-caption="ningun archivo seleccionado"
-                          />
-                        </div>
-                      </Col>
-                      <Col md={6}>
-                        <div className="form-group position-relative">
-                          <label>Subir Fotografias Accidente:</label>
-                          <input
-                            type="file"
-                            className="form-control-file"
-                            id="fileupload"
-                            placeholder="elegir archivo"
-                          />
                         </div>
                       </Col>
                       <Col md={12}>
@@ -230,7 +200,10 @@ class PageJobApply extends Component {
                             />
                             <label className="custom-control-label">
                               Acepto{" "}
-                              <Link to="#" className="text-primary">
+                              <Link
+                                to="/terminos-y-condiciones"
+                                className="text-primary"
+                              >
                                 los Terminos y Condiciones
                               </Link>
                             </label>
