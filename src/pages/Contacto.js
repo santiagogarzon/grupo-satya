@@ -7,14 +7,37 @@ class PageContactTwo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Contactvisible: false
+      Contactvisible: false,
+      name: "",
+      email: "",
+      comments: ""
     };
+    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  sendConsulta(variables) {
+    window.emailjs
+      .send("gmail", "consulta", variables)
+      .then(res => {
+        console.log("Email successfully sent!");
+      })
+      // Handle errors here however you like, or use a React error boundary
+      .catch(err =>
+        console.error(
+          "Oh well, you failed. Here some thoughts on the error that occured:",
+          err
+        )
+      );
   }
 
   handleSubmit(event) {
     event.preventDefault();
     this.setState({ Contactvisible: true });
+    this.sendConsulta({
+      name: this.state.name,
+      email: this.state.email,
+      consulta: this.state.comments
+    });
   }
 
   componentDidMount() {
@@ -36,6 +59,9 @@ class PageContactTwo extends Component {
     }
   };
 
+  handleChange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+  }
   render() {
     return (
       <React.Fragment>
@@ -93,6 +119,8 @@ class PageContactTwo extends Component {
                             type="text"
                             className="form-control pl-5"
                             placeholder="Tu Nombre:"
+                            value={this.state.nombre}
+                            onChange={this.handleChange}
                             required
                           />
                         </div>
@@ -109,6 +137,8 @@ class PageContactTwo extends Component {
                             type="email"
                             className="form-control pl-5"
                             placeholder="Tu Email :"
+                            value={this.state.email}
+                            onChange={this.handleChange}
                             required
                           />
                         </div>
@@ -123,6 +153,8 @@ class PageContactTwo extends Component {
                             rows="4"
                             className="form-control pl-5"
                             placeholder="Tu mensaje :"
+                            value={this.state.mensaje}
+                            onChange={this.handleChange}
                           ></textarea>
                         </div>
                       </Col>
@@ -135,6 +167,7 @@ class PageContactTwo extends Component {
                           name="send"
                           className="submitBnt btn btn-primary btn-block"
                           value="Enviar Mensaje"
+                          onclick={this.handleSubmit}
                         />
                         <div id="simple-msg"></div>
                       </div>
@@ -186,12 +219,13 @@ class PageContactTwo extends Component {
                     </div>
                     <div className="content mt-3 overflow-hidden d-block">
                       <h4 className="title font-weight-bold mb-0">Ubicación</h4>
-                      <Link
-                        to="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
+                      <a
+                        target="_blank"
+                        href="https://www.google.com.ar/maps/dir//Duarte+Quir%C3%B3s+525,+C%C3%B3rdoba/@-31.4175645,-64.1945819,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9432a280e326b6db:0x5c5f176be74f5d17!2m2!1d-64.1923932!2d-31.4175645!3e0"
                         className="video-play-icon h6 text-primary"
                       >
                         Ver en Google Maps
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

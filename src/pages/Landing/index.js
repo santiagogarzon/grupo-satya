@@ -78,10 +78,18 @@ class Index extends Component {
                       </p>
                       <div className="watch-video mt-4 pt-2">
                         <Link
-                          to="page-services"
                           className="btn btn-primary mb-2 mr-2"
+                          to="/#"
+                          onClick={event => {
+                            event.preventDefault();
+                            window.scrollTo(
+                              0,
+                              document.getElementById("quienes-somos")
+                                .offsetTop - 100
+                            );
+                          }}
                         >
-                          Nuestros Servicios
+                          Quiero saber más
                         </Link>
                         <Link
                           onClick={this.openModal}

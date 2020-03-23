@@ -7,15 +7,52 @@ class PageJobApply extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Contactvisible: false
+      Contactvisible: false,
+      name: "",
+      email: "",
+      phone: "",
+      productor: "",
+      aseguradora: "",
+      accidente: "",
+      terminosYCondiciones: false
     };
+    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  sendReclamo(variables) {
+    window.emailjs
+      .send("gmail", "reclamo", variables)
+      .then(res => {
+        this.setState({ Contactvisible: true });
+      })
+      // Handle errors here however you like, or use a React error boundary
+      .catch(err =>
+        console.error(
+          "Oh well, you failed. Here some thoughts on the error that occured:",
+          err
+        )
+      );
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    this.setState({ Contactvisible: true });
+    this.sendReclamo({
+      email: this.state.email,
+      name: this.state.name,
+      phone: this.state.phone,
+      productor: this.state.productor,
+      aseguradora: this.state.aseguradora,
+      accidente: this.state.accidente
+    });
   }
+
+  handleChange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+  }
+
+  handleCheckboxChange = event =>
+    this.setState({ terminosYCondiciones: event.target.checked });
 
   componentDidMount() {
     window.addEventListener("scroll", this.scrollNavigation, true);
@@ -112,6 +149,8 @@ class PageJobApply extends Component {
                             type="text"
                             className="form-control pl-5"
                             placeholder="Nombre y Apellido:"
+                            value={this.state.name}
+                            onChange={this.handleChange}
                             required
                           />
                         </div>
@@ -129,6 +168,8 @@ class PageJobApply extends Component {
                             type="email"
                             className="form-control pl-5"
                             placeholder="Tu Email :"
+                            value={this.state.email}
+                            onChange={this.handleChange}
                             required
                           />
                         </div>
@@ -141,11 +182,13 @@ class PageJobApply extends Component {
                           </label>
                           <i className="mdi mdi-phone ml-3 icons"></i>
                           <input
-                            name="number"
-                            id="number"
+                            name="phone"
+                            id="phone"
                             type="number"
                             className="form-control pl-5"
                             placeholder="Tu Telefono :"
+                            value={this.state.phone}
+                            onChange={this.handleChange}
                             required
                           />
                         </div>
@@ -155,11 +198,12 @@ class PageJobApply extends Component {
                           <label>Nombre de Productor :</label>
                           <i className="mdi mdi-book ml-3 icons"></i>
                           <input
-                            name="subject"
-                            id="subject"
+                            name="productor"
+                            id="productor"
                             className="form-control pl-5"
                             placeholder="Tu Productor:"
-                            required
+                            value={this.state.productor}
+                            onChange={this.handleChange}
                           />
                         </div>
                       </Col>
@@ -167,12 +211,37 @@ class PageJobApply extends Component {
                         <div className="form-group">
                           <label>Aseguradora del tercero:</label>
                           <span className="text-danger">*</span>
-                          <select className="form-control" id="Sortbylist-Shop">
-                            <option>Aseguradora</option>
-                            <option>Aseguradora</option>
-                            <option>Aseguradora</option>
-                            <option>Aseguradora</option>
-                            <option>Aseguradora</option>
+                          <select
+                            className="form-control"
+                            id="aseguradora"
+                            name="aseguradora"
+                            value={this.state.aseguradora}
+                            onChange={this.handleChange}
+                          >
+                            <option>Federacion Patronal</option>
+                            <option>Rivadavia</option>
+                            <option>Río Uruguay</option>
+                            <option>Mapfre</option>
+                            <option>La Mercantil Andina</option>
+                            <option>Meridional</option>
+                            <option>Libra</option>
+                            <option>Segurcoorp</option>
+                            <option>La Caja</option>
+                            <option>Zurich</option>
+                            <option>Segurcoorp</option>
+                            <option>La Caja</option>
+                            <option>QBE seguros</option>
+                            <option>Sura</option>
+                            <option>Provincia Seguros</option>
+                            <option>Escudo seguros</option>
+                            <option>Liderar</option>
+                            <option>El Norte</option>
+                            <option>La Holando</option>
+                            <option>Allianz</option>
+                            <option>Orbis</option>
+                            <option>Nación</option>
+                            <option>Paraná</option>
+                            <option>La Segunda</option>
                           </select>
                         </div>
                       </Col>
@@ -182,11 +251,13 @@ class PageJobApply extends Component {
                           <span className="text-danger">*</span>
                           <i className="mdi mdi-comment-text-outline ml-3 icons"></i>
                           <textarea
-                            name="comments"
-                            id="comments"
+                            name="accidente"
+                            id="accidente"
                             rows="4"
                             className="form-control pl-5"
                             placeholder="Describe el accidente :"
+                            value={this.state.accidente}
+                            onChange={this.handleChange}
                           ></textarea>
                         </div>
                       </Col>
@@ -195,10 +266,13 @@ class PageJobApply extends Component {
                           <div className="custom-control custom-checkbox">
                             <input
                               type="checkbox"
-                              className="custom-control-input"
-                              id="customCheck1"
+                              className="custom-control-input checkbox-reclamo "
+                              id="terminosYCondiciones"
+                              name="terminosYCondiciones"
+                              checked={this.state.terminosYCondiciones}
+                              onChange={this.handleCheckboxChange}
                             />
-                            <label className="custom-control-label">
+                            <label className="custom-control-label label-checkbox">
                               Acepto{" "}
                               <Link
                                 to="/terminos-y-condiciones"
@@ -219,6 +293,8 @@ class PageJobApply extends Component {
                           name="send"
                           className="submitBnt btn btn-primary"
                           value="Iniciar Reclamo"
+                          onclick={this.handleSubmit}
+                          disabled={!this.state.terminosYCondiciones}
                         />
                       </Col>
                     </Row>
