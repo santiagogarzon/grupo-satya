@@ -166,7 +166,7 @@ class Steps extends Component {
                   <h2 className="mb-0 mt-3">
                     <span className="counter-value" data-count="45000">
                       {" "}
-                      <CountUp start={200} end={628} duration={50} />
+                      <CountUp start={200} end={628} duration={20} />
                     </span>
                   </h2>
                   <h5 className="counter-head text-muted">Siniestros</h5>
@@ -176,11 +176,11 @@ class Steps extends Component {
                 <div className="counter-box text-center">
                   <img src={Asset186} height="70" alt="" />
                   <h2 className="mb-0 mt-3">
+                    $
                     <span className="counter-value" data-count="48002">
                       {" "}
-                      <CountUp start={300000} end={500655} duration={50} />
+                      <CountUp start={150000} end={3245012} duration={20} />
                     </span>
-                    $
                   </h2>
                   <h5 className="counter-head text-muted">Monto reclamado</h5>
                 </div>
@@ -190,7 +190,7 @@ class Steps extends Component {
                   <img src={Asset189} height="70" alt="" />
                   <h2 className="mb-0 mt-3">
                     <span className="counter-value" data-count="11">
-                      <CountUp start={50} end={85} duration={50} />
+                      <CountUp start={50} end={87} duration={20} />
                     </span>
                     %
                   </h2>
@@ -203,8 +203,8 @@ class Steps extends Component {
                   <h2 className="mb-0 mt-3">
                     <span className="counter-value" data-count="9">
                       {" "}
-                      <CountUp start={30} end={90} duration={50} />
-                    </span>
+                      <CountUp start={30} end={70} duration={20} />
+                    </span>{" "}
                     Días
                   </h2>
                   <h5 className="counter-head text-muted">Tiempo de Pago</h5>

@@ -107,6 +107,10 @@ class Topbar extends Component {
                   <span className="menu-arrow"></span>
                 </li>
                 <li>
+                  <Link to="/instructivo">Instructivo</Link>
+                  <span className="menu-arrow"></span>
+                </li>
+                <li>
                   <Link to="/preguntas-frecuentes">FAQS</Link>
                   <span className="menu-arrow"></span>
                 </li>

@@ -2,37 +2,28 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "reactstrap";
+import Faq from "../components/Shared/Faq";
 
 // import images
-import about from "../images/hosting/2.png";
-import team1 from "../images/team/1.jpg";
-import team2 from "../images/team/2.jpg";
-import team3 from "../images/team/3.jpg";
-import team4 from "../images/team/4.jpg";
+import blog01 from "../images/blog/01.jpg";
+import blog02 from "../images/blog/02.jpg";
+import blog03 from "../images/blog/03.jpg";
+import blog04 from "../images/blog/04.jpg";
+import blog05 from "../images/blog/05.jpg";
+import blog06 from "../images/blog/06.jpg";
+import blog07 from "../images/blog/07.jpg";
+import blog08 from "../images/blog/08.jpg";
 
-// Modal Video
-import ModalVideo from "react-modal-video";
-import "../../node_modules/react-modal-video/scss/modal-video.scss";
-
-import ShowCase from "../pages/Apps/ShowCase";
-
-class PageAboutUs extends Component {
+class Instructivo extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isOpen: false
-    };
-    this.openModal = this.openModal.bind(this);
-  }
-  openModal() {
-    this.setState({ isOpen: true });
+    this.state = {};
   }
 
   componentDidMount() {
     document.body.classList = "";
     window.addEventListener("scroll", this.scrollNavigation, true);
   }
-
   // Make sure to remove the DOM listener when the component is unmounted.
   componentWillUnmount() {
     window.removeEventListener("scroll", this.scrollNavigation);
@@ -58,7 +49,7 @@ class PageAboutUs extends Component {
                 <Row className="justify-content-center">
                   <Col lg={12} className="text-center">
                     <div className="page-next-level">
-                      <h4 className="title"> Sobre Nosotros </h4>
+                      <h4 className="title"> Instructivo </h4>
                       <ul className="page-next d-inline-block bg-white shadow p-2 pl-4 pr-4 rounded mb-0">
                         <li>
                           <Link
@@ -69,8 +60,16 @@ class PageAboutUs extends Component {
                           </Link>
                         </li>
                         <li>
+                          <Link
+                            to="#"
+                            className="text-uppercase font-weight-bold text-dark"
+                          >
+                            Reclamos
+                          </Link>
+                        </li>
+                        <li>
                           <span className="text-uppercase text-primary font-weight-bold">
-                            Sobre Nosotros
+                            Instructivo
                           </span>
                         </li>
                       </ul>
@@ -81,64 +80,31 @@ class PageAboutUs extends Component {
             </div>
           </div>
         </section>
-        <section>
-          <div className="container">
-            <Row className="align-items-center">
-              <Col lg={5} md={5} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
-                <div className="position-relative">
-                  <img
-                    src={about}
-                    className="rounded img-fluid mx-auto d-block"
-                    alt=""
-                  />
-                </div>
-              </Col>
 
-              <Col lg={7} md={7} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
-                <div className="section-title ml-lg-4">
-                  <h4 className="title mb-4">Quienes Somos</h4>
-                  <p className="text-muted">
-                    <span className="text-primary"> GRUPO SATYA</span> es una
-                    firma dedicada a la gestión integral de los reclamos
-                    administrativos de terceros ante las compañías de seguros.
-                    Para que la misma sea absolutamente eficiente, cuenta con un
-                    equipo de gran trayectoria y renombre, donde cada sector es
-                    especialista en la materia que desempeña.
-                  </p>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </section>
-        <section>
-          <ShowCase />
-        </section>
-
-        <section className="pt-5 pb-5 mb-5">
+        <section className="section">
           <div className="container">
             <Row className="mt-md-5 pt-md-3 mt-4 pt-2 mt-sm-0 pt-sm-0 justify-content-center">
               <Col className="text-center">
                 <div className="section-title">
                   <h4 className="main-title mb-4">
-                    Queres reclamar tu siniestro? Hablanos!
+                    Lo que necesitas para que tu reclamo sea facil, rapido y
+                    seguro.
                   </h4>
                   <p className="text-muted para-desc mx-auto">
-                    Empeza a trabajar con{" "}
+                    A continuación detallaremos de manera detallada el{" "}
                     <span className="text-primary font-weight-bold">
-                      Grupo Satya
+                      proceso{" "}
                     </span>
-                    , la solución definitiva a tus reclamos.
+                    de Reclamo Extrajudicial ante diversas compañías de Seguros.
                   </p>
-                  <a href="iniciar-reclamo" className="btn btn-primary mt-4">
-                    Iniciar reclamo <i className="mdi mdi-arrow-right"></i>
-                  </a>
                 </div>
               </Col>
             </Row>
           </div>
         </section>
+        <Faq />
       </React.Fragment>
     );
   }
 }
-export default PageAboutUs;
+export default Instructivo;

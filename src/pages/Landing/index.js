@@ -12,6 +12,7 @@ import Counter from "./Counter";
 import Testimonial from "./Testimonial";
 import Partner from "../../components/Shared/Partner";
 import Steps from "./Steps";
+import Cta from "../Coworking/Cta";
 
 // Modal Video
 import ModalVideo from "react-modal-video";
@@ -121,16 +122,42 @@ class Index extends Component {
         {/* Feature */}
         <Feature />
 
-        <Steps />
+        {/* <Steps /> */}
 
-        {/* Partner */}
-        <section className="pt-5 pb-5 border-bottom">
+        <Cta />
+
+        <section className="pt-5 pb-5 border-top border-bottom">
           <div className="container">
             <Row className="justify-content-center">
               <Partner />
             </Row>
           </div>
         </section>
+
+        <section className="pt-5 pb-5 mb-5">
+          <div className="container">
+            <Row className="mt-md-5 pt-md-3 mt-4 pt-2 mt-sm-0 pt-sm-0 justify-content-center">
+              <Col className="text-center">
+                <div className="section-title">
+                  <h4 className="main-title mb-4">
+                    Tienes alguna pregunta ? Contactate!
+                  </h4>
+                  <p className="text-muted para-desc mx-auto">
+                    Empeza a trabajar con{" "}
+                    <span className="text-primary font-weight-bold">
+                      Grupo Satya
+                    </span>
+                    , la solución definitiva a tus reclamos.
+                  </p>
+                  <a href="iniciar-reclamo" className="btn btn-primary mt-4">
+                    Iniciar reclamo <i className="mdi mdi-arrow-right"></i>
+                  </a>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </section>
+        {/*  */}
 
         {/* <Counter /> */}
 

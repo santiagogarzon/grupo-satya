@@ -17,7 +17,9 @@ import app1 from "../../images/app/1.png";
 import app2 from "../../images/app/2.png";
 import app3 from "../../images/app/3.png";
 import app4 from "../../images/app/4.png";
+import garageLogo from "../../images/garage-service.png";
 import roundWhite from "../../images/shapes/round-white.png";
+import medicoLogo from "../../images/logo-medico.jpg";
 
 class ShowCase extends Component {
   constructor(props) {
@@ -90,7 +92,7 @@ class ShowCase extends Component {
                               className="text-center pt-1 pb-1"
                             >
                               <h4 className="title font-weight-normal mb-0">
-                                Area Digital
+                                Area Reparaciones Vehiculares
                               </h4>
                             </div>
                           </NavLink>
@@ -109,7 +111,7 @@ class ShowCase extends Component {
                               className="text-center pt-1 pb-1"
                             >
                               <h4 className="title font-weight-normal mb-0">
-                                Area Reparaciones
+                                Area Médica
                               </h4>
                             </div>
                           </NavLink>
@@ -127,11 +129,11 @@ class ShowCase extends Component {
                   <TabPane tabId="1">
                     <Row className="align-items-center">
                       <Col md={6}>
-                        <img
+                        {/* <img
                           src={app2}
                           className="img-fluid mx-auto d-block"
                           alt=""
-                        />
+                        /> */}
                       </Col>
 
                       <Col md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
@@ -152,15 +154,20 @@ class ShowCase extends Component {
                           <ul className="list-unstyled feature-list text-muted">
                             <li>
                               <i className="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>
-                              Digital Marketing Solutions for Tomorrow
+                              Estudio Juridico con mas de 30 años de
+                              experiencia, seriedad y compromiso.
                             </li>
                             <li>
                               <i className="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>
-                              Our Talented & Experienced Marketing Agency
+                              Más de 8 años de experiencia en el rubro de los
+                              accidentes de tránsito.
                             </li>
                             <li>
                               <i className="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>
-                              Create your own skin to match your brand
+                              Equipo integrado por 6 personas dedicadas
+                              exclusivamente a los siniestros, logrando agilidad
+                              y sencillez para el cobro de los derechos de sus
+                              clientes.
                             </li>
                           </ul>
                         </div>
@@ -169,84 +176,77 @@ class ShowCase extends Component {
                   </TabPane>
                   <TabPane tabId="2">
                     <Row className="align-items-center">
-                      <Col md={6}>
-                        <img
-                          src={app3}
-                          className="img-fluid mx-auto d-block"
-                          alt=""
-                        />
-                      </Col>
-
                       <Col md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div className="section-title">
                           <h4 className="title mb-4">
                             <i className="mdi mdi-chevron-double-right text-primary"></i>{" "}
-                            Area Digital
+                            Area Reparaciones Vehiculares
                           </h4>
                           <p className="text-muted">
-                            El equipo del programador Santiago Garzón , cuenta
-                            con la ardua tarea de facilitar al asegurado las
-                            herramientas para que realizar el reclamo sea un
-                            acto sencillo y ágil como así también realizar
-                            procedimientos internos tendientes a la mejora
-                            continua de la gestión de reclamo ante las compañías
-                            de seguro.
+                            GRUPO SATYA cuenta con uno de los mejores talleres
+                            de chapa-pintura y mecánica ligera de la provincia
+                            de Córdoba. Estamos hablando del taller THE GARAGE
+                            SERVICE. El mismo cuenta con la certificación de
+                            GLASURIT, siendo a su vez, el único taller de
+                            Córdoba en cumplir con las exigentes normas ISO9001.
+                            THE GARAGE SERVICE, trabaja con diversas compañías
+                            de seguro de primera línea. Cuenta con un equipo de
+                            más de 20 personas encargadas de realizar la
+                            reparación más acertada de un vehículo, siendo uno
+                            de los pocos talleres que poseen cabina de
+                            presurización para la mejor terminación en sus
+                            trabajos.
                           </p>
                           <ul className="list-unstyled feature-list text-muted">
                             <li>
                               <i className="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>
-                              Ultimas tecnologias usadas en nuestras Apps.
-                            </li>
-                            <li>
-                              <i className="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>
-                              Bases de datos de nuestra compañia asegurada en la
-                              nube.
-                            </li>
-                            <li>
-                              <i className="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>
-                              Aplicamos Deep learning en nuestros datos para
-                              predecir tendencias.
+                              Para más información, accede a su{" "}
+                              <a
+                                target="_blank"
+                                href="https://garageservice.com.ar/"
+                              >
+                                sitio web
+                              </a>
                             </li>
                           </ul>
                         </div>
+                      </Col>
+                      <Col md={6}>
+                        {/* <img
+                          src={app1}
+                          className="img-fluid mx-auto d-block"
+                          alt=""
+                        /> */}
                       </Col>
                     </Row>
                   </TabPane>
                   <TabPane tabId="3">
                     <Row className="align-items-center">
                       <Col md={6}>
-                        <img
-                          src={app4}
+                        {/* <img
+                          src={app3}
                           className="img-fluid mx-auto d-block"
                           alt=""
-                        />
+                        /> */}
                       </Col>
 
                       <Col md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div className="section-title">
                           <h4 className="title mb-4">
                             <i className="mdi mdi-chevron-double-right text-primary"></i>{" "}
-                            Area Reparaciones
+                            Area Médica
                           </h4>
-                          <p className="text-muted">chamuyar aqui</p>
-                          <ul className="list-unstyled feature-list text-muted">
-                            <li>
-                              <i className="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>
-                              Digital Marketing Solutions for Tomorrow
-                            </li>
-                            <li>
-                              <i className="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>
-                              Our Talented & Experienced Marketing Agency
-                            </li>
-                            <li>
-                              <i className="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>
-                              Create your own skin to match your brand
-                            </li>
-                          </ul>
-                          <Link to="#" className="mt-3 text-primary">
-                            Find Out More{" "}
-                            <i className="mdi mdi-chevron-right"></i>
-                          </Link>
+                          <p className="text-muted">
+                            GRUPO SATYA se encarga de todo tipo de reclamo ante
+                            las compañías, incluso en caso de que se haya
+                            lesionado el damnificado. Es por ello, que cuenta
+                            con el equipo de médicos legistas especializados
+                            sobre el tema del Consultorio Médico del Dr. Rodolfo
+                            Martínez, quien con sus más de 40 años de
+                            experiencia en la materia, nos brinda una mirada y
+                            apoyo tanto en informes de incapacidad como en
+                            juntas médicas, entre otros aspectos.
+                          </p>
                         </div>
                       </Col>
                     </Row>

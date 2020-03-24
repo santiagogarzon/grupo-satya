@@ -293,6 +293,29 @@ class FAQs extends Component {
             </Row>
           </div>
         </section>
+        <section className="pt-5 pb-5 mb-5">
+          <div className="container">
+            <Row className="mt-md-5 pt-md-3 mt-4 pt-2 mt-sm-0 pt-sm-0 justify-content-center">
+              <Col className="text-center">
+                <div className="section-title">
+                  <h4 className="main-title mb-4">
+                    Queres reclamar tu siniestro? Hablanos!
+                  </h4>
+                  <p className="text-muted para-desc mx-auto">
+                    Empeza a trabajar con{" "}
+                    <span className="text-primary font-weight-bold">
+                      Grupo Satya
+                    </span>
+                    , la solución definitiva a tus reclamos.
+                  </p>
+                  <a href="iniciar-reclamo" className="btn btn-primary mt-4">
+                    Iniciar reclamo <i className="mdi mdi-arrow-right"></i>
+                  </a>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </section>
       </React.Fragment>
     );
   }
