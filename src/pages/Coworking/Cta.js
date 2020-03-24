@@ -4,11 +4,9 @@ import { Link } from "react-router-dom";
 import { Row, Col } from "reactstrap";
 
 // Modal Video
-import ModalVideo from "react-modal-video";
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 
 //import images
-import cta from "../../images/coworking/cta.jpg";
 import documentacion from "../../images/icon/insurance.svg";
 import reclamo from "../../images/icon/membership.svg";
 import firma from "../../images/icon/pen.svg";

@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 
 //import images
-import featureImg from "../../images/app/stepsImageBg.png";
 
 import CountUp from "react-countup";
 

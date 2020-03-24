@@ -5,10 +5,6 @@ import { Row, Col } from "reactstrap";
 
 // import images
 import about from "../images/hosting/2.png";
-import team1 from "../images/team/1.jpg";
-import team2 from "../images/team/2.jpg";
-import team3 from "../images/team/3.jpg";
-import team4 from "../images/team/4.jpg";
 
 // Modal Video
 import ModalVideo from "react-modal-video";

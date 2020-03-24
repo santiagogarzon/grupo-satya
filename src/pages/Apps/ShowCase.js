@@ -13,10 +13,6 @@ import {
 import classnames from "classnames";
 
 //import images
-import app1 from "../../images/app/1.png";
-import app2 from "../../images/app/2.png";
-import app3 from "../../images/app/3.png";
-import app4 from "../../images/app/4.png";
 import garageLogo from "../../images/garage-service.png";
 import roundWhite from "../../images/shapes/round-white.png";
 import medicoLogo from "../../images/logo-medico.jpg";

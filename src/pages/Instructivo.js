@@ -4,16 +4,6 @@ import { Link } from "react-router-dom";
 import { Row, Col } from "reactstrap";
 import Faq from "../components/Shared/Faq";
 
-// import images
-import blog01 from "../images/blog/01.jpg";
-import blog02 from "../images/blog/02.jpg";
-import blog03 from "../images/blog/03.jpg";
-import blog04 from "../images/blog/04.jpg";
-import blog05 from "../images/blog/05.jpg";
-import blog06 from "../images/blog/06.jpg";
-import blog07 from "../images/blog/07.jpg";
-import blog08 from "../images/blog/08.jpg";
-
 class Instructivo extends Component {
   constructor(props) {
     super(props);
