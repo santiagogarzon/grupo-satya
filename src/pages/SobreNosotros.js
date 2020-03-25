@@ -7,7 +7,6 @@ import { Row, Col } from "reactstrap";
 import about from "../images/hosting/2.png";
 
 // Modal Video
-import ModalVideo from "react-modal-video";
 import "../../node_modules/react-modal-video/scss/modal-video.scss";
 
 import ShowCase from "../pages/Apps/ShowCase";

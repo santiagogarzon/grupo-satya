@@ -1,13 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-// import images
-import americanEx from "../../images/payments/american-ex.png";
-import discover from "../../images/payments/discover.png";
-import masterCard from "../../images/payments/master-card.png";
-import paypal from "../../images/payments/paypal.png";
-import visa from "../../images/payments/visa.png";
-
 class Footer extends Component {
   constructor(props) {
     super(props);

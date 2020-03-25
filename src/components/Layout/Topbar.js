@@ -68,7 +68,7 @@ class Topbar extends Component {
           <div className="container">
             <div>
               <Link className="logo" to="/index">
-                <img className="satya-logo" src={logo} />
+                <img className="satya-logo" src={logo} alt="grupo-satya logo" />
               </Link>
             </div>
             <div className="buy-button">

@@ -8,10 +8,7 @@ import services from "../../images/illustrator/services.svg";
 
 // import generic componenets
 import Feature from "./Feature";
-import Counter from "./Counter";
-import Testimonial from "./Testimonial";
 import Partner from "../../components/Shared/Partner";
-import Steps from "./Steps";
 import Cta from "../Coworking/Cta";
 
 // Modal Video

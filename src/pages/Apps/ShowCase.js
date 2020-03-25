@@ -1,6 +1,6 @@
 // React Basic and Bootstrap
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
 import {
   TabContent,
   TabPane,
@@ -13,9 +13,7 @@ import {
 import classnames from "classnames";
 
 //import images
-import garageLogo from "../../images/garage-service.png";
 import roundWhite from "../../images/shapes/round-white.png";
-import medicoLogo from "../../images/logo-medico.jpg";
 
 class ShowCase extends Component {
   constructor(props) {
@@ -200,6 +198,7 @@ class ShowCase extends Component {
                               <a
                                 target="_blank"
                                 href="https://garageservice.com.ar/"
+                                rel="noopener"
                               >
                                 sitio web
                               </a>

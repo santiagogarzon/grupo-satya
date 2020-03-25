@@ -1,7 +1,7 @@
 // React Basic and Bootstrap
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Card, CardBody, Collapse} from 'reactstrap';
+import { Row, Col,} from 'reactstrap';
 
 class PageTerms extends Component {
 
