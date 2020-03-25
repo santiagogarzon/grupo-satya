@@ -198,7 +198,7 @@ class ShowCase extends Component {
                               <a
                                 target="_blank"
                                 href="https://garageservice.com.ar/"
-                                rel="noopener"
+                                rel="noopener noreferrer"
                               >
                                 sitio web
                               </a>

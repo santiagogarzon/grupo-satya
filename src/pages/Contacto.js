@@ -222,7 +222,7 @@ class PageContactTwo extends Component {
                         target="_blank"
                         href="https://www.google.com.ar/maps/dir//Duarte+Quir%C3%B3s+525,+C%C3%B3rdoba/@-31.4175645,-64.1945819,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9432a280e326b6db:0x5c5f176be74f5d17!2m2!1d-64.1923932!2d-31.4175645!3e0"
                         className="video-play-icon h6 text-primary"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                       >
                         Ver en Google Maps
                       </a>
