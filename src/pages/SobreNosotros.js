@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Row, Col } from "reactstrap";
 
 // import images
-import about from "../images/hosting/2.png";
+import about from "../images/nosotros.jpg";
 
 // Modal Video
 import "../../node_modules/react-modal-video/scss/modal-video.scss";
@@ -80,7 +80,7 @@ class PageAboutUs extends Component {
           <div className="container">
             <Row className="align-items-center">
               <Col lg={5} md={5} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
-                <div className="position-relative">
+                <div className="position-relative about-us">
                   <img
                     src={about}
                     className="rounded img-fluid mx-auto d-block"
@@ -95,10 +95,11 @@ class PageAboutUs extends Component {
                   <p className="text-muted">
                     <span className="text-primary"> GRUPO SATYA</span> es una
                     firma dedicada a la gestión integral de los reclamos
-                    administrativos de terceros ante las compañías de seguros.
-                    Para que la misma sea absolutamente eficiente, cuenta con un
-                    equipo de gran trayectoria y renombre, donde cada sector es
-                    especialista en la materia que desempeña.
+                    administrativos de terceros ante las compañías de seguros en
+                    razon a un accidente de transito. Para que la misma sea
+                    absolutamente eficiente, cuenta con un equipo de gran
+                    trayectoria y renombre, donde cada sector es especialista en
+                    la materia que desempeña.
                   </p>
                 </div>
               </Col>

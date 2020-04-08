@@ -99,3 +99,24 @@ a {
 .checkbox-reclamo {
   z-index: 9999;
 }
+
+.about-us {
+  margin-top: 100px;
+}
+.profesionales {
+  height: 450px !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 480px) {
+  .about-us {
+    margin-top: 50px;
+  }
+  .profesionales {
+    height: 200px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

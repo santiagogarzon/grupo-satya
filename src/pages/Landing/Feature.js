@@ -27,10 +27,10 @@ class Feature extends Component {
                       Grupo Satya
                     </span>{" "}
                     es un equipo de profesionales especializados en la
-                    realización de reclamos administrativos ante diferentes
-                    compañías de seguro, a fin de gestionarle a los damnificados
-                    el cobro de dinero o reparación del vehículo siniestrado de
-                    manera rápida, efectiva y simple.
+                    realización de reclamos extra judiciales por siniestros ante
+                    diferentes compañías de seguro, a fin de gestionarle a los
+                    damnificados el cobro de dinero o reparación del vehículo
+                    siniestrado de manera rápida, efectiva y simple.
                   </p>
                 </div>
               </Col>

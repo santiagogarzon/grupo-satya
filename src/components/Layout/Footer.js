@@ -44,8 +44,8 @@ class Footer extends Component {
                 <h4 className="text-light footer-head">Empresa</h4>
                 <ul className="list-unstyled footer-list mt-4">
                   <li>
-                    <Link to="/index" className="text-foot">
-                      <i className="mdi mdi-chevron-right mr-1"></i> Home
+                    <Link to="/" className="text-foot">
+                      <i className="mdi mdi-chevron-right mr-1"></i> Inicio
                     </Link>
                   </li>
                   <li>

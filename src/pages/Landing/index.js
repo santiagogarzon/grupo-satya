@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Row, Col } from "reactstrap";
 
 // import images
-import services from "../../images/illustrator/services.svg";
+import services from "../../images/landingWithLogo.jpg";
 
 // import generic componenets
 import Feature from "./Feature";
@@ -65,7 +65,7 @@ class Index extends Component {
             <div className="home-desc-center">
               <div className="container">
                 <Row className="align-items-center">
-                  <Col lg={7} md={7}>
+                  <Col lg={5} md={5}>
                     <div className="title-heading mt-4">
                       <h1 className="heading mb-3">
                         La solución para <br />
@@ -100,15 +100,15 @@ class Index extends Component {
                         <ModalVideo
                           channel="youtube"
                           isOpen={this.state.isOpen}
-                          videoId="L61p2uyiMSo"
+                          videoId=""
                           onClose={() => this.setState({ isOpen: false })}
                         />
                       </div>
                     </div>
                   </Col>
 
-                  <Col lg={5} md={5} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
-                    <img src={services} alt="" />
+                  <Col lg={7} md={7} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <img width="100%" src={services} alt="" />
                   </Col>
                 </Row>
               </div>

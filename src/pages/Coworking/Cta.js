@@ -100,10 +100,10 @@ class Cta extends Component {
                   <h2 className="title text-uppercase mb-4">Firma</h2>
 
                   <p className="text-muted">
-                    Le enviaremos el reclamo administrativo a la casilla de
-                    correo de nuestro cliente a fin que pueda controlar
-                    absolutamente todo lo que allí se describe para luego
-                    firmarlo.
+                    Te enviaremos el reclamo administrativo a tu casilla de
+                    correo para que puedas controlar todo lo que allí se
+                    describe para luego firmarlo y permitirnos negociar con las
+                    aseguradoras.
                   </p>
                 </div>
               </Col>

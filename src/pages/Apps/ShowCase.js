@@ -14,6 +14,9 @@ import classnames from "classnames";
 
 //import images
 import roundWhite from "../../images/shapes/round-white.png";
+import legal from "../../images/legal.jpg";
+import salud from "../../images/salud.jpg";
+import mecanica from "../../images/mecanica.jpg";
 
 class ShowCase extends Component {
   constructor(props) {
@@ -31,7 +34,7 @@ class ShowCase extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section pt-0 bg-light">
+        <section className="section pt-0">
           <div className="container mt-100 mt-60">
             <Row className="justify-content-center">
               <Col className="text-center">
@@ -122,12 +125,12 @@ class ShowCase extends Component {
                 <TabContent activeTab={this.state.activeTab}>
                   <TabPane tabId="1">
                     <Row className="align-items-center">
-                      <Col md={6}>
-                        {/* <img
-                          src={app2}
-                          className="img-fluid mx-auto d-block"
+                      <Col md={6} className="profesionales">
+                        <img
+                          src={legal}
+                          className="img-fluid mx-auto d-block profesionales"
                           alt=""
-                        /> */}
+                        />
                       </Col>
 
                       <Col md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
@@ -170,6 +173,13 @@ class ShowCase extends Component {
                   </TabPane>
                   <TabPane tabId="2">
                     <Row className="align-items-center">
+                      <Col md={6}>
+                        <img
+                          src={mecanica}
+                          className="img-fluid mx-auto d-block profesionales"
+                          alt=""
+                        />
+                      </Col>
                       <Col md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div className="section-title">
                           <h4 className="title mb-4">
@@ -206,23 +216,16 @@ class ShowCase extends Component {
                           </ul>
                         </div>
                       </Col>
-                      <Col md={6}>
-                        {/* <img
-                          src={app1}
-                          className="img-fluid mx-auto d-block"
-                          alt=""
-                        /> */}
-                      </Col>
                     </Row>
                   </TabPane>
                   <TabPane tabId="3">
                     <Row className="align-items-center">
                       <Col md={6}>
-                        {/* <img
-                          src={app3}
-                          className="img-fluid mx-auto d-block"
+                        <img
+                          src={salud}
+                          className="img-fluid mx-auto d-block profesionales"
                           alt=""
-                        /> */}
+                        />
                       </Col>
 
                       <Col md={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
