@@ -10,6 +10,7 @@ import services from "../../images/landingWithLogo.jpg";
 import Feature from "./Feature";
 import Partner from "../../components/Shared/Partner";
 import Cta from "../Coworking/Cta";
+import Steps from "./Steps";
 
 // Modal Video
 import ModalVideo from "react-modal-video";
@@ -119,9 +120,9 @@ class Index extends Component {
         {/* Feature */}
         <Feature />
 
-        {/* <Steps /> */}
-
         <Cta />
+
+        <Steps />
 
         <section className="pt-5 pb-5 border-top border-bottom">
           <div className="container">

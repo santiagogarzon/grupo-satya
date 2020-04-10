@@ -23,19 +23,34 @@ class Footer extends Component {
                 </p>
                 <ul className="list-unstyled social-icon social mb-0 mt-4">
                   <li className="list-inline-item">
-                    <Link to="#" className="rounded mr-1">
+                    <a
+                      href="https://www.facebook.com/Grupo-Satya-109231744053265"
+                      target="_blank"
+                      className="rounded mr-1"
+                      rel="noopener noreferrer"
+                    >
                       <i className="mdi mdi-facebook" title="Facebook"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="#" className="rounded mr-1">
+                    <a
+                      href="https://www.instagram.com/grupo.satya/"
+                      target="_blank"
+                      className="rounded mr-1"
+                      rel="noopener noreferrer"
+                    >
                       <i className="mdi mdi-instagram" title="Instagram"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="#" className="rounded">
+                    <a
+                      href="https://twitter.com/GrupoSatya"
+                      target="_blank"
+                      className="rounded mr-1"
+                      rel="noopener noreferrer"
+                    >
                       <i className="mdi mdi-twitter" title="Twitter"></i>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>

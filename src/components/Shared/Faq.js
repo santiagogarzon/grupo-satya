@@ -132,7 +132,11 @@ class Faq extends Component {
                     a fin de que ellos verifiquen los daños que posee el rodado
                     y calcular el monto estimativo de reparación. Para este
                     caso, contamos con{" "}
-                    <a target="_blanck" href="https://garageservice.com.ar/">
+                    <a
+                      target="_blank"
+                      href="https://garageservice.com.ar/"
+                      rel="noopener noreferrer"
+                    >
                       THE GARAGE SERVICE
                     </a>{" "}
                     quienes con más de 20 de años de experiencia en el mercado,

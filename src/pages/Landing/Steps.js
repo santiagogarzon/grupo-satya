@@ -21,8 +21,7 @@ class Steps extends Component {
     return (
       <React.Fragment>
         <section className="section bg-light" id="proceso">
-          <div className="container">
-            <Row className="justify-content-center">
+          {/* <Row className="justify-content-center">
               <Col className="text-center">
                 <div className="section-title mb-60">
                   <h4 className="main-title mb-4">
@@ -135,82 +134,80 @@ class Steps extends Component {
                   className="img-fluid mx-auto d-block"
                   alt=""
                 />
-              </Col> */}
-            </Row>
+              </Col> 
+            </Row> */}
 
-            <div className="container mt-100 mt-60">
-              <Row className="justify-content-center">
-                <Col className="text-center">
-                  <div className="section-title mb-4 pb-2">
-                    <h4 className="main-title mb-4">
-                      Las estadisticas de{" "}
-                      <span className="text-primary">Grupo Satya</span>
-                    </h4>
-                    <p className="text-muted para-desc mx-auto mb-0">
-                      Comenza tu reclamo con{" "}
-                      <span className="text-primary font-weight-bold">
-                        Grupo Satya
-                      </span>
-                      {""}, la manera más simple y rápida de resolver tu
-                      siniestro
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </div>
-            <Row id="counter">
-              <Col md={3} className="col-6 mt-4 pt-2">
-                <div className="counter-box text-center">
-                  <img src={Asset190} height="70" alt="" />
-                  <h2 className="mb-0 mt-3">
-                    <span className="counter-value" data-count="45000">
-                      {" "}
-                      <CountUp start={200} end={628} duration={20} />
+          <div className="container ">
+            <Row className="justify-content-center">
+              <Col className="text-center">
+                <div className="section-title mb-4 pb-2">
+                  <h4 className="main-title mb-4">
+                    Las estadisticas de{" "}
+                    <span className="text-primary">Grupo Satya</span>
+                  </h4>
+                  <p className="text-muted para-desc mx-auto mb-0">
+                    Comenza tu reclamo con{" "}
+                    <span className="text-primary font-weight-bold">
+                      Grupo Satya
                     </span>
-                  </h2>
-                  <h5 className="counter-head text-muted">Siniestros</h5>
-                </div>
-              </Col>
-              <Col md={3} className="col-6 mt-4 pt-2">
-                <div className="counter-box text-center">
-                  <img src={Asset186} height="70" alt="" />
-                  <h2 className="mb-0 mt-3">
-                    $
-                    <span className="counter-value" data-count="48002">
-                      {" "}
-                      <CountUp start={150000} end={3245012} duration={20} />
-                    </span>
-                  </h2>
-                  <h5 className="counter-head text-muted">Monto reclamado</h5>
-                </div>
-              </Col>
-              <Col md={3} className="col-6 mt-4 pt-2">
-                <div className="counter-box text-center">
-                  <img src={Asset189} height="70" alt="" />
-                  <h2 className="mb-0 mt-3">
-                    <span className="counter-value" data-count="11">
-                      <CountUp start={50} end={87} duration={20} />
-                    </span>
-                    %
-                  </h2>
-                  <h5 className="counter-head text-muted">Casos Ganados</h5>
-                </div>
-              </Col>
-              <Col md={3} className="col-6 mt-4 pt-2">
-                <div className="counter-box text-center">
-                  <img src={Asset187} height="70" alt="" />
-                  <h2 className="mb-0 mt-3">
-                    <span className="counter-value" data-count="9">
-                      {" "}
-                      <CountUp start={30} end={70} duration={20} />
-                    </span>{" "}
-                    Días
-                  </h2>
-                  <h5 className="counter-head text-muted">Tiempo de Pago</h5>
+                    {""}, la manera más simple y rápida de resolver tu siniestro
+                  </p>
                 </div>
               </Col>
             </Row>
           </div>
+          <Row id="counter">
+            <Col md={3} className="col-6 mt-4 pt-2">
+              <div className="counter-box text-center">
+                <img src={Asset190} height="70" alt="" />
+                <h2 className="mb-0 mt-3">
+                  <span className="counter-value" data-count="45000">
+                    {" "}
+                    <CountUp start={200} end={628} duration={20} />
+                  </span>
+                </h2>
+                <h5 className="counter-head text-muted">Siniestros</h5>
+              </div>
+            </Col>
+            <Col md={3} className="col-6 mt-4 pt-2">
+              <div className="counter-box text-center">
+                <img src={Asset186} height="70" alt="" />
+                <h2 className="mb-0 mt-3">
+                  $
+                  <span className="counter-value" data-count="48002">
+                    {" "}
+                    <CountUp start={150000} end={3245012} duration={20} />
+                  </span>
+                </h2>
+                <h5 className="counter-head text-muted">Monto reclamado</h5>
+              </div>
+            </Col>
+            <Col md={3} className="col-6 mt-4 pt-2">
+              <div className="counter-box text-center">
+                <img src={Asset189} height="70" alt="" />
+                <h2 className="mb-0 mt-3">
+                  <span className="counter-value" data-count="11">
+                    <CountUp start={50} end={87} duration={20} />
+                  </span>
+                  %
+                </h2>
+                <h5 className="counter-head text-muted">Casos Ganados</h5>
+              </div>
+            </Col>
+            <Col md={3} className="col-6 mt-4 pt-2">
+              <div className="counter-box text-center">
+                <img src={Asset187} height="70" alt="" />
+                <h2 className="mb-0 mt-3">
+                  <span className="counter-value" data-count="9">
+                    {" "}
+                    <CountUp start={30} end={70} duration={20} />
+                  </span>{" "}
+                  Días
+                </h2>
+                <h5 className="counter-head text-muted">Tiempo de Pago</h5>
+              </div>
+            </Col>
+          </Row>
         </section>
       </React.Fragment>
     );
