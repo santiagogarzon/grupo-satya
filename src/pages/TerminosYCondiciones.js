@@ -13,6 +13,7 @@ class PageTerms extends Component {
             t3 : false,
             t4 : false
         }
+        window.scrollTo(0,0);
     }
 
     componentDidMount() {

@@ -23,6 +23,7 @@ class Index extends Component {
       isOpen: false
     };
     this.openModal = this.openModal.bind(this);
+    window.scrollTo(0, 0);
   }
   openModal() {
     this.setState({ isOpen: true });

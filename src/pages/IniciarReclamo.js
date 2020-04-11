@@ -19,6 +19,7 @@ class PageJobApply extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    window.scrollTo(0, 0);
   }
 
   sendReclamo(variables) {

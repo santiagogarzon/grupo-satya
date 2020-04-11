@@ -9,6 +9,8 @@ class Faq extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+
+    window.scrollTo(0, 0);
   }
 
   render() {
