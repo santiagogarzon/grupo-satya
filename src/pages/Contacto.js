@@ -6,6 +6,7 @@ class PageContactTwo extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      contactSent: false,
       Contactvisible: false,
       name: "",
       email: "",
@@ -18,7 +19,8 @@ class PageContactTwo extends Component {
     window.emailjs
       .send("gmail", "consulta", variables)
       .then(res => {
-        console.log("Email successfully sent!");
+        this.setState({ Contactvisible: true, contactSent: true });
+        window.scrollTo(0, document.getElementById("form").offsetTop - 50);
       })
       // Handle errors here however you like, or use a React error boundary
       .catch(err =>
@@ -31,7 +33,6 @@ class PageContactTwo extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.setState({ Contactvisible: true });
     this.sendConsulta({
       name: this.state.name,
       email: this.state.email,
@@ -79,7 +80,7 @@ class PageContactTwo extends Component {
               </Col>
             </Row>
           </div>
-          <div className="container mt-100 mt-60">
+          <div className="container mt-100 mt-60" id="form">
             <Row className="align-items-center">
               <Col
                 lg={5}
@@ -166,7 +167,8 @@ class PageContactTwo extends Component {
                           name="send"
                           className="submitBnt btn btn-primary btn-block"
                           value="Enviar Mensaje"
-                          onclick={this.handleSubmit}
+                          onClick={this.handleSubmit}
+                          disabled={this.state.contactSent}
                         />
                         <div id="simple-msg"></div>
                       </div>

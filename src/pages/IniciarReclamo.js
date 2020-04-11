@@ -7,6 +7,7 @@ class PageJobApply extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      emailSent: false,
       Contactvisible: false,
       name: "",
       email: "",
@@ -24,7 +25,8 @@ class PageJobApply extends Component {
     window.emailjs
       .send("gmail", "reclamo", variables)
       .then(res => {
-        this.setState({ Contactvisible: true });
+        this.setState({ Contactvisible: true, emailSent: true });
+        window.scrollTo(0, document.getElementById("form").offsetTop - 79);
       })
       // Handle errors here however you like, or use a React error boundary
       .catch(err =>
@@ -118,7 +120,7 @@ class PageJobApply extends Component {
         <Row className="mt-md-5 pt-md-3 pt-2 mt-sm-0 pt-sm-0 justify-content-center">
           <Col className="text-center">
             <div className="section-title">
-              <h4 className="main-title mb-4">
+              <h4 className="main-title mb-4 mt-4">
                 Haz el primer paso, inicia tu reclamo con nosotros!
               </h4>
               <p className="text-muted para-desc mx-auto">
@@ -133,12 +135,13 @@ class PageJobApply extends Component {
             </div>
           </Col>
         </Row>
-        <section className="mt-5 mb-5">
+        <section className="mt-5 mb-5" id="form">
           <div className="container">
             <Row className="justify-content-center">
               <Col lg={10} md={7}>
                 <div className="custom-form">
                   <Alert
+                    id="message-sent"
                     color="info"
                     isOpen={this.state.Contactvisible}
                     toggle={() => {
@@ -311,8 +314,11 @@ class PageJobApply extends Component {
                           name="send"
                           className="submitBnt btn btn-primary"
                           value="Iniciar Reclamo"
-                          onclick={this.handleSubmit}
-                          disabled={!this.state.terminosYCondiciones}
+                          onClick={this.handleSubmit}
+                          disabled={
+                            !this.state.terminosYCondiciones ||
+                            this.state.emailSent
+                          }
                         />
                       </Col>
                     </Row>
