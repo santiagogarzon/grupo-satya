@@ -41,7 +41,7 @@ class Cta extends Component {
                       Grupo Satya
                     </span>{" "}
                     desarrolló este proceso simple que te conseguira tu
-                    resarcimiento de manera facil, rapida y mas importante
+                    resarcimiento de manera facil, rapida y lo más importante
                     GRATIS.
                   </p>
                 </div>

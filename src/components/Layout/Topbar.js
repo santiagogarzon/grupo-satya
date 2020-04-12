@@ -118,6 +118,10 @@ class Topbar extends Component {
                   <Link to="/contacto">Contacto</Link>
                   <span className="menu-arrow"></span>
                 </li>
+                <li className="only-mobile">
+                  <Link to="/iniciar-reclamo">Iniciar Reclamo</Link>
+                  <span className="menu-arrow"></span>
+                </li>
               </ul>
             </div>
           </div>
