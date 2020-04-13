@@ -22,6 +22,7 @@ class Index extends Component {
     super(props);
     this.state = {
       isOpen: false
+      videoUrl: "mFY0BS9eT7A"
     };
     this.openModal = this.openModal.bind(this);
     window.scrollTo(0, 0);
@@ -103,7 +104,7 @@ class Index extends Component {
                         <ModalVideo
                           channel="youtube"
                           isOpen={this.state.isOpen}
-                          videoId="mFY0BS9eT7A"
+                          videoId={this.state.videoUrl}
                           youtube={{ autoplay: 0 }}
                           onClose={() => this.setState({ isOpen: false })}
                           onClick={() => {
