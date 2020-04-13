@@ -68,7 +68,7 @@ class Topbar extends Component {
         <header id="topnav" className="defaultscroll sticky">
           <div className="container">
             <div>
-              <Link className="logo" to="/index">
+              <Link className="logo" to="/">
                 <img className="satya-logo" src={logo} alt="grupo-satya logo" />
               </Link>
             </div>
@@ -110,7 +110,7 @@ class Topbar extends Component {
             >
               <ul className="navigation-menu" id="top-menu">
                 <li>
-                  <Link to="/index">Inicio</Link>
+                  <Link to="/">Inicio</Link>
                 </li>
                 <li>
                   <Link to="/sobre-nosotros">Nosotros</Link>

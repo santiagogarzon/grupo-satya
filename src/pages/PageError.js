@@ -43,8 +43,8 @@ class PageError extends Component {
 
                                 <Row>
                                     <div className="col-md-12 text-center">
-                                        <Link to="/index" className="btn btn-outline-primary mt-4">Go Back</Link>
-                                        <Link to="/index" className="btn btn-primary mt-4 ml-2">Go To Home</Link>
+                                        <Link to="/" className="btn btn-outline-primary mt-4">Go Back</Link>
+                                        <Link to="/" className="btn btn-primary mt-4 ml-2">Go To Home</Link>
                                     </div>
                                 </Row>
                             </div>

@@ -28,6 +28,10 @@ class Index extends Component {
     window.scrollTo(0, 0);
   }
   openModal() {
+    ReactGA.event({
+      category: "Video",
+      action: "Press video button"
+    });
     this.setState({ isOpen: true });
   }
 
@@ -106,12 +110,6 @@ class Index extends Component {
                           isOpen={this.state.isOpen}
                           videoId="mFY0BS9eT7A"
                           onClose={() => this.setState({ isOpen: false })}
-                          onClick={() => {
-                            ReactGA.event({
-                              category: "Video",
-                              action: "Press video button"
-                            });
-                          }}
                         />
                       </div>
                     </div>

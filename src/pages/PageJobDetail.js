@@ -49,7 +49,7 @@ class PageJobDetail extends Component {
                                                 <li className="list-inline-item text-primary"><i className="mdi mdi-office-building text-warning mr-2"></i>Vivo</li>
                                             </ul>
                                             <ul className="page-next d-inline-block bg-white shadow p-2 pl-4 pr-4 rounded mb-0">
-                                                <li><Link to="/index" className="text-uppercase font-weight-bold text-dark">Home</Link></li>
+                                                <li><Link to="/" className="text-uppercase font-weight-bold text-dark">Home</Link></li>
                                                 <li><Link to="#" className="ml-1 text-uppercase font-weight-bold text-dark">Pages</Link></li>
                                                 <li><Link to="#" className="ml-1 text-uppercase font-weight-bold text-dark">Careers</Link></li>
                                                 <li>

@@ -44,7 +44,7 @@ class PageJob extends Component {
                                         <div className="page-next-level">
                                             <h4 className="title"> Jobs / Careers </h4>
                                             <ul className="page-next d-inline-block bg-white shadow p-2 pl-4 pr-4 rounded mb-0">
-                                                <li><Link to="/index" className="text-uppercase font-weight-bold text-dark ">Home</Link></li>
+                                                <li><Link to="/" className="text-uppercase font-weight-bold text-dark ">Home</Link></li>
                                                 <li><Link to="#" className="text-uppercase font-weight-bold text-dark mr-1">Pages</Link></li>
                                                 <li><Link to="#" className="text-uppercase font-weight-bold text-dark mr-1">Careers</Link></li>
                                                 <li>

@@ -24,7 +24,7 @@ class PageSignup extends Component {
         return (
             <React.Fragment>
                 <div className="back-to-home rounded d-none d-sm-block">
-                    <Link to="/index" className="text-white rounded d-inline-block text-center"><i className="mdi mdi-home"></i></Link>
+                    <Link to="/" className="text-white rounded d-inline-block text-center"><i className="mdi mdi-home"></i></Link>
                 </div>
 
                 <section className="bg-home">

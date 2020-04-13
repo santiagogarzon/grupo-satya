@@ -180,7 +180,7 @@ class PagePricing extends Component {
                                         <div className="page-next-level">
                                             <h4 className="title"> Pricing </h4>
                                             <ul className="page-next d-inline-block bg-white shadow p-2 pl-4 pr-4 rounded mb-0">
-                                                <li><Link to="/index" className="text-uppercase font-weight-bold text-dark">Home</Link></li>
+                                                <li><Link to="/" className="text-uppercase font-weight-bold text-dark">Home</Link></li>
                                                 <li><Link to="#" className="text-uppercase font-weight-bold text-dark">Pages</Link></li>
                                                 <li>
                                                     <span className="text-uppercase text-primary font-weight-bold">Price</span>

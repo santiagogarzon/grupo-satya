@@ -65,7 +65,7 @@ class PageWorkDetail extends Component {
                                                 <li className="list-inline-item h6 date text-muted"> <span className="text-dark">Date :</span> 23th Sep, 2019</li>
                                             </ul>
                                             <ul className="page-next d-inline-block bg-white shadow p-2 pl-4 pr-4 rounded mb-0">
-                                                <li><Link to="/index" className="text-uppercase font-weight-bold text-dark">Home</Link></li>
+                                                <li><Link to="/" className="text-uppercase font-weight-bold text-dark">Home</Link></li>
                                                 <li><Link to="#" className="text-uppercase font-weight-bold text-dark">Pages</Link></li>
                                                 <li><Link to="#" className="text-uppercase font-weight-bold text-dark">Portfolio</Link></li>
                                                 <li>
