@@ -21,7 +21,7 @@ class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
       videoUrl: "mFY0BS9eT7A"
     };
     this.openModal = this.openModal.bind(this);
