@@ -16,6 +16,8 @@ import Steps from "./Steps";
 import ModalVideo from "react-modal-video";
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 
+import ReactGA from "react-ga";
+
 class Index extends Component {
   constructor(props) {
     super(props);
@@ -104,6 +106,12 @@ class Index extends Component {
                           isOpen={this.state.isOpen}
                           videoId="mFY0BS9eT7A"
                           onClose={() => this.setState({ isOpen: false })}
+                          onClick={() => {
+                            ReactGA.event({
+                              category: "Video",
+                              action: "Press video button"
+                            });
+                          }}
                         />
                       </div>
                     </div>

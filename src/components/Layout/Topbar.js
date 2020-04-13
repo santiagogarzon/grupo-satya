@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router";
 import logo from "../../images/satyaLogo2.png";
+import ReactGA from "react-ga";
 
 class Topbar extends Component {
   constructor(props) {
@@ -72,7 +73,16 @@ class Topbar extends Component {
               </Link>
             </div>
             <div className="buy-button">
-              <Link to="/iniciar-reclamo" className="btn btn-primary">
+              <Link
+                to="/iniciar-reclamo"
+                className="btn btn-primary"
+                onClick={() => {
+                  ReactGA.event({
+                    category: "Actions",
+                    action: "Iniciar Reclamo"
+                  });
+                }}
+              >
                 Iniciar Reclamo
               </Link>
             </div>
