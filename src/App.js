@@ -17,7 +17,7 @@ import "./css/materialdesignicons.min.css";
 import routes from "./routes";
 import ReactGA from "react-ga";
 
-const Landing = React.lazy(() => import("./pages/Landing/index"));
+import Landing from "./pages/Landing/index";
 
 const trackingId = "UA-57170681-4";
 const history = createBrowserHistory();
