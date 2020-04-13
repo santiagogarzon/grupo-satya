@@ -9,7 +9,6 @@ import {
 } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
-// Import Css
 import "./Apps.scss";
 import "./css/materialdesignicons.min.css";
 
