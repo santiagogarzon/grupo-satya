@@ -104,7 +104,7 @@ class Index extends Component {
                           channel="youtube"
                           isOpen={this.state.isOpen}
                           videoId="mFY0BS9eT7A"
-                          autoplay="0"
+                          youtube={{ autoplay: 0 }}
                           onClose={() => this.setState({ isOpen: false })}
                           onClick={() => {
                             ReactGA.event({
