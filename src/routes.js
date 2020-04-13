@@ -2,7 +2,6 @@ import React from "react";
 
 // Import all components
 
-const Landing = React.lazy(() => import("./pages/Landing/index"));
 const IniciarReclamo = React.lazy(() => import("./pages/IniciarReclamo"));
 const FAQs = React.lazy(() => import("./pages/FAQs"));
 const PageContact = React.lazy(() => import("./pages/Contacto"));
@@ -12,7 +11,6 @@ const Instructivo = React.lazy(() => import("./pages/Instructivo"));
 
 const routes = [
   // public Routes
-  { path: "/index", component: Landing },
   { path: "/iniciar-reclamo", component: IniciarReclamo },
   { path: "/preguntas-frecuentes", component: FAQs },
   { path: "/contacto", component: PageContact },

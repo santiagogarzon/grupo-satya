@@ -4,8 +4,7 @@ import {
   Route,
   Switch,
   BrowserRouter as Router,
-  withRouter,
-  Redirect
+  withRouter
 } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
@@ -16,6 +15,8 @@ import "./css/materialdesignicons.min.css";
 // Include Routes
 import routes from "./routes";
 import ReactGA from "react-ga";
+
+const Landing = React.lazy(() => import("./pages/Landing/index"));
 
 const trackingId = "UA-57170681-4";
 const history = createBrowserHistory();
@@ -54,7 +55,7 @@ class App extends Component {
                   key={idx}
                 />
               ))}
-              <Route exact path="/" render={() => <Redirect to="/index" />} />
+              <Route path="/" component={withLayout(Landing)} />
             </Switch>
           </React.Suspense>
         </Router>
