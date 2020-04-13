@@ -13,7 +13,6 @@ import Cta from "../Coworking/Cta";
 import Steps from "./Steps";
 
 // Modal Video
-import ModalVideo from "react-modal-video";
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 
 import ReactGA from "react-ga";
@@ -26,10 +25,19 @@ class Index extends Component {
       videoUrl: "mFY0BS9eT7A"
     };
     this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
     window.scrollTo(0, 0);
   }
   openModal() {
+    ReactGA.event({
+      category: "Video",
+      action: "Press video button"
+    });
     this.setState({ isOpen: true });
+  }
+
+  closeModal() {
+    this.setState({ isOpen: false });
   }
 
   componentDidMount() {
@@ -103,19 +111,33 @@ class Index extends Component {
                           Video
                         </Link>
                         {this.state.isOpen && (
-                          <ModalVideo
-                            channel="youtube"
-                            isOpen={this.state.isOpen}
-                            videoId={this.state.videoUrl}
-                            youtube={{ autoplay: 0 }}
-                            onClose={() => this.setState({ isOpen: false })}
-                            onClick={() => {
-                              ReactGA.event({
-                                category: "Video",
-                                action: "Press video button"
-                              });
-                            }}
-                          />
+                          <div
+                            className="modal-video"
+                            tabIndex="-1"
+                            role="dialog"
+                            aria-label="You just openned the modal video"
+                          >
+                            <div className="modal-video-body">
+                              <div className="modal-video-inner">
+                                <div className="modal-video-movie-wrap video-container">
+                                  <button
+                                    className="modal-video-close-btn"
+                                    aria-label="Close the modal by clicking here"
+                                    onClick={this.closeModal}
+                                  ></button>
+                                  <iframe
+                                    title="Grupo Satya video"
+                                    width="460"
+                                    height="230"
+                                    src="//www.youtube.com/embed/mFY0BS9eT7A?autoplay=0"
+                                    frameBorder="0"
+                                    allowFullScreen=""
+                                    tabIndex="-1"
+                                  ></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         )}
                       </div>
                     </div>
