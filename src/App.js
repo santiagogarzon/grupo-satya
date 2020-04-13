@@ -4,7 +4,8 @@ import {
   Route,
   Switch,
   BrowserRouter as Router,
-  withRouter
+  withRouter,
+  Redirect
 } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
@@ -56,6 +57,7 @@ class App extends Component {
                 />
               ))}
               <Route path="/" component={withLayout(Landing)} />
+              <Route exact path="/index" render={() => <Redirect to="/" />} />
             </Switch>
           </React.Suspense>
         </Router>
