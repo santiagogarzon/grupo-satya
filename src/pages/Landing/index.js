@@ -14,6 +14,7 @@ import Steps from "./Steps";
 
 // Modal Video
 import ModalVideo from "react-modal-video";
+import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 
 import ReactGA from "react-ga";
 
@@ -101,19 +102,21 @@ class Index extends Component {
                           <i className="mdi mdi-play play-icon-circle text-center d-inline-block mr-2 rounded-pill text-white position-relative play play-iconbar"></i>{" "}
                           Video
                         </Link>
-                        <ModalVideo
-                          channel="youtube"
-                          isOpen={this.state.isOpen}
-                          videoId={this.state.videoUrl}
-                          youtube={{ autoplay: 0 }}
-                          onClose={() => this.setState({ isOpen: false })}
-                          onClick={() => {
-                            ReactGA.event({
-                              category: "Video",
-                              action: "Press video button"
-                            });
-                          }}
-                        />
+                        {this.state.isOpen && (
+                          <ModalVideo
+                            channel="youtube"
+                            isOpen={this.state.isOpen}
+                            videoId={this.state.videoUrl}
+                            youtube={{ autoplay: 0 }}
+                            onClose={() => this.setState({ isOpen: false })}
+                            onClick={() => {
+                              ReactGA.event({
+                                category: "Video",
+                                action: "Press video button"
+                              });
+                            }}
+                          />
+                        )}
                       </div>
                     </div>
                   </Col>
