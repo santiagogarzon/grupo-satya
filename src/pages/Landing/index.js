@@ -131,13 +131,13 @@ class Index extends Component {
 
         <Steps />
 
-        <section className="pt-5 pb-5 border-top border-bottom">
+        {/* <section className="pt-5 pb-5 border-top border-bottom">
           <div className="container">
             <Row className="justify-content-center">
               <Partner />
             </Row>
           </div>
-        </section>
+        </section> */}
 
         <section className="pt-5 pb-5 mb-5">
           <div className="container">

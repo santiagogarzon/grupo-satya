@@ -161,10 +161,9 @@ class ShowCase extends Component {
                             </li>
                             <li>
                               <i className="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>
-                              Equipo integrado por 6 personas dedicadas
-                              exclusivamente a los siniestros, logrando agilidad
-                              y sencillez para el cobro de los derechos de sus
-                              clientes.
+                              Equipo dedicado exclusivamente a los siniestros,
+                              logrando agilidad y sencillez para el cobro de los
+                              derechos de sus clientes.
                             </li>
                           </ul>
                         </div>
