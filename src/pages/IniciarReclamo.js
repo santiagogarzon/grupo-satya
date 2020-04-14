@@ -118,24 +118,28 @@ class PageJobApply extends Component {
           </div>
         </section>
 
-        <Row className="mt-md-5 pt-md-3 pt-2 mt-sm-0 pt-sm-0 justify-content-center">
-          <Col className="text-center">
-            <div className="section-title">
-              <h4 className="main-title mb-4 mt-4">
-                Haz el primer paso, inicia tu reclamo con nosotros!
-              </h4>
-              <p className="text-muted para-desc mx-auto">
-                Llena este sencillo formulario para que uno de nuestros
-                representates se contacte con vos en las proxima 24 hrs. Empeza
-                a trabajar con{" "}
-                <span className="text-primary font-weight-bold">
-                  Grupo Satya
-                </span>
-                , la solución definitiva a tus reclamos.
-              </p>
-            </div>
-          </Col>
-        </Row>
+        <section className="section">
+          <div className="container">
+            <Row className="mt-md-5 pt-md-3 pt-2 mt-sm-0 pt-sm-0 justify-content-center">
+              <Col className="text-center">
+                <div className="section-title">
+                  <h4 className="main-title mb-4 mt-4">
+                    Haz el primer paso, inicia tu reclamo con nosotros!
+                  </h4>
+                  <p className="text-muted para-desc mx-auto">
+                    Llena este sencillo formulario para que uno de nuestros
+                    representates se contacte con vos en las proxima 24 hrs.
+                    Empeza a trabajar con{" "}
+                    <span className="text-primary font-weight-bold">
+                      Grupo Satya
+                    </span>
+                    , la solución definitiva a tus reclamos.
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </section>
         <section className="mt-5 mb-5" id="form">
           <div className="container">
             <Row className="justify-content-center">

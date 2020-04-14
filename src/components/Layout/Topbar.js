@@ -129,8 +129,9 @@ class Topbar extends Component {
                   <span className="menu-arrow"></span>
                 </li>
                 <li className="only-mobile">
-                  <Link to="/iniciar-reclamo">Iniciar Reclamo</Link>
-                  <span className="menu-arrow"></span>
+                  <Link id="hamburger-button" to="/iniciar-reclamo">
+                    Iniciar Reclamo
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -8,7 +8,7 @@ import services from "../../images/landingWithLogo.jpg";
 
 // import generic componenets
 import Feature from "./Feature";
-import Partner from "../../components/Shared/Partner";
+//import Partner from "../../components/Shared/Partner";
 import Cta from "../Coworking/Cta";
 import Steps from "./Steps";
 
@@ -84,7 +84,7 @@ class Index extends Component {
                       </p>
                       <div className="watch-video mt-4 pt-2">
                         <Link
-                          className="btn btn-primary mb-2 mr-2"
+                          className="btn btn-primary mb-2 mr-2 only-desktop"
                           to="/#"
                           onClick={event => {
                             event.preventDefault();
@@ -96,6 +96,12 @@ class Index extends Component {
                           }}
                         >
                           Quiero saber más
+                        </Link>
+                        <Link
+                          className="btn btn-primary mb-2 mr-2 mobile-button"
+                          to="/iniciar-reclamo"
+                        >
+                          Iniciar Reclamo
                         </Link>
                         <Link
                           onClick={this.openModal}
@@ -131,7 +137,8 @@ class Index extends Component {
 
         <Steps />
 
-        {/* <section className="pt-5 pb-5 border-top border-bottom">
+        {/* Logos comentados 
+        <section className="pt-5 pb-5 border-top border-bottom">
           <div className="container">
             <Row className="justify-content-center">
               <Partner />

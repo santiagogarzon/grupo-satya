@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 
 // Import all components
 import IniciarReclamo from "./pages/IniciarReclamo";

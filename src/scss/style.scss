@@ -114,9 +114,35 @@ a {
   display: none !important;
 }
 
+.mobile-button {
+  display: none !important;
+}
+
+.only-desktop {
+  display: inline !important;
+}
+
 @media (max-width: 480px) {
   .only-mobile {
     display: block !important;
+    background: #2f55d4;
+    border: solid;
+    border-width: 0px;
+    border-radius: 20px;
+    margin-bottom: 10px !important;
+  }
+
+  #hamburger-button {
+    color: white !important;
+    text-align: center;
+  }
+
+  .mobile-button {
+    display: inline !important;
+  }
+
+  .only-desktop {
+    display: none !important;
   }
 
   .about-us {
