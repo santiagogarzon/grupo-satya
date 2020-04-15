@@ -98,6 +98,11 @@ a {
 
 .checkbox-reclamo {
   z-index: 9999;
+  position: absolute;
+  left: 0;
+  width: 1rem;
+  height: 1.25rem;
+  opacity: 0;
 }
 
 .about-us {
