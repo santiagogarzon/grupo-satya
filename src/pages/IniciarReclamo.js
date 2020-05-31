@@ -15,7 +15,7 @@ class PageJobApply extends Component {
       productor: "",
       aseguradora: "",
       accidente: "",
-      terminosYCondiciones: false
+      terminosYCondiciones: true
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -219,7 +219,7 @@ class PageJobApply extends Component {
                           />
                         </div>
                       </Col>
-                      <Col md={6}>
+                      {/* <Col md={6}>
                         <div className="form-group position-relative">
                           <label>Nombre de Productor :</label>
                           <i className="mdi mdi-book ml-3 icons"></i>
@@ -232,8 +232,8 @@ class PageJobApply extends Component {
                             onChange={this.handleChange}
                           />
                         </div>
-                      </Col>
-                      <Col md={6}>
+                      </Col> */}
+                      {/* <Col md={6}>
                         <div className="form-group">
                           <label>Aseguradora del tercero:</label>
                           <span className="text-danger">*</span>
@@ -286,7 +286,7 @@ class PageJobApply extends Component {
                             onChange={this.handleChange}
                           ></textarea>
                         </div>
-                      </Col>
+                      </Col> */}
                       <Col md={12}>
                         <div className="form-group">
                           <div className="custom-control custom-checkbox">
