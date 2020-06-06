@@ -15,7 +15,7 @@ class PageJobApply extends Component {
       productor: "",
       aseguradora: "",
       accidente: "",
-      terminosYCondiciones: false
+      terminosYCondiciones: true,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,12 +25,12 @@ class PageJobApply extends Component {
   sendReclamo(variables) {
     window.emailjs
       .send("gmail", "reclamo", variables)
-      .then(res => {
+      .then((res) => {
         this.setState({ Contactvisible: true, emailSent: true });
         window.scrollTo(0, document.getElementById("form").offsetTop - 79);
       })
       // Handle errors here however you like, or use a React error boundary
-      .catch(err =>
+      .catch((err) =>
         console.error(
           "Oh well, you failed. Here some thoughts on the error that occured:",
           err
@@ -46,7 +46,7 @@ class PageJobApply extends Component {
       phone: this.state.phone,
       productor: this.state.productor,
       aseguradora: this.state.aseguradora,
-      accidente: this.state.accidente
+      accidente: this.state.accidente,
     });
   }
 
@@ -54,7 +54,7 @@ class PageJobApply extends Component {
     this.setState({ [event.target.name]: event.target.value });
   }
 
-  handleCheckboxChange = event =>
+  handleCheckboxChange = (event) =>
     this.setState({ terminosYCondiciones: event.target.checked });
 
   componentDidMount() {
@@ -151,7 +151,7 @@ class PageJobApply extends Component {
                     isOpen={this.state.Contactvisible}
                     toggle={() => {
                       this.setState({
-                        Contactvisible: !this.state.Contactvisible
+                        Contactvisible: !this.state.Contactvisible,
                       });
                     }}
                   >
